@@ -7,8 +7,12 @@ const language = [
     {code: 'ch', lang: 'Chinese'},
 ];
 
-const changeLanguage =() =>{}
+
 const LanguageSelector = () => {
+    const changeLanguage =(lng) =>{
+        // eslint-disable-next-line no-undef
+        i18n.changeLanguage(lng);
+    }
     return <div>
         {
             language.map(({ lng }) => (
